@@ -27,12 +27,5 @@ namespace RuneSharp.Core.GrandExchange
 
         [Get("/m={geRoute}/api/catalogue/category.json")]
         Task<Response<AlphaList>> GetCategory([Query("category", Format = "d")] ItemCategory categoryId);
-
-
-//        /api/catalogue/detail.json?item=X
-
-//        [Get("/m={geRoute}/api/catalogue/category.json")]
-//        Task<Response<ItemGraphData>> A([Query("category")] ItemCategory itemId);
-
     }
 }

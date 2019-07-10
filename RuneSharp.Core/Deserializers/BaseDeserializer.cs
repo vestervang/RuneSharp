@@ -1,6 +1,5 @@
 using System;
 using System.Net.Http;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 using RestEase;
 using RuneSharp.Core.Extensions;
@@ -58,8 +57,6 @@ namespace RuneSharp.Core.Deserializers
                 return DeserializeCharacter<T>(content, response.RequestMessage.RequestUri);
             }
             
-            
-
             try
             {
                 return JsonConvert.DeserializeObject<T>(content);

@@ -16,7 +16,8 @@ namespace RuneSharp.Core.GrandExchange
         [JsonProperty("id")] 
         public long Id { get; set; }
 
-        [JsonProperty("type")] 
+        [JsonProperty("type")]
+        [JsonConverter(typeof(ParseItemCategory))]
         public ItemCategory Type { get; set; }
 
         [JsonProperty("typeIcon")] 
